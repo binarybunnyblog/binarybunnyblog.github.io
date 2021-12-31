@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on binarybunny</title>
+    <link>https://binarybunny.tk/tags/linux/</link>
+    <description>Recent content in linux on binarybunny</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 31 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://binarybunny.tk/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The year is about to end, I feel lonely and decided to write a bit about Linux rootkits</title>
+      <link>https://binarybunny.tk/post/2021/12/31/the-year-is-about-to-end-i-feel-lonely-and-decided-to-write-a-bit-about-linux-rootkits/</link>
+      <pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://binarybunny.tk/post/2021/12/31/the-year-is-about-to-end-i-feel-lonely-and-decided-to-write-a-bit-about-linux-rootkits/</guid>
+      <description>If you&amp;rsquo;re from Brazil, you may have seen all those news about a massive flood happened to the brazilian state of Bahia. It happens that I&amp;rsquo;m actually from there and a few people from my family got homeless due to the flood. It&amp;rsquo;s 3 AM here at the time of writing and I feel lonely and kind of useless on dealing with the entire situation&amp;hellip; So, I decided to host this blog up and write this very post about Linux rootkits.</description>
+    </item>
+    
+  </channel>
+</rss>
