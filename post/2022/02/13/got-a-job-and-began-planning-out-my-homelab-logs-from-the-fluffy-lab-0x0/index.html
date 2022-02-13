@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Got a job and began planning out my homelab | logs from the fluffy lab [0x0] | binarybunny</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="https://binarybunny.tk/css/theme-override.css">
+    <header>
+
+  <nav>
+    <ul>
+      
+      
+      <li class="pull-left ">
+        <a href="https://binarybunny.tk/">~/binarybunny</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="/categories/">~/categories</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="/tags/">~/tags</a>
+      </li>
+      
+
+      
+      
+      <li class="pull-right">
+        <a href="/index.xml">~/subscribe</a>
+      </li>
+      
+
+    </ul>
+  </nav>
+</header>
+
+  </head>
+
+  <body>
+    <br/>
+
+<div class="article-meta">
+<h1><span class="title">Got a job and began planning out my homelab | logs from the fluffy lab [0x0]</span></h1>
+<h2 class="author">BinaryBunny</h2>
+<h2 class="date">2022/02/13</h2>
+<p class="terms">
+  
+  
+  
+  
+  Tags: <a href="/tags/job">job</a> <a href="/tags/homelab">homelab</a> <a href="/tags/planning">planning</a> <a href="/tags/fluffy-lab">fluffy lab</a> <a href="/tags/homelab-log">homelab log</a> 
+  
+  
+</p>
+</div>
+
+
+<div class="content-wrapper">
+  <main>
+    <p>It was midnight of four days ago (or five? I don&rsquo;t remember exactly how many) when someone texts me a job offer. I accepted it, of course. Since then, I&rsquo;ve been working as a software developer. That&rsquo;s my first job and I&rsquo;m as excited as ever. But then an idea pops up in my mind: <em>homelabbing</em>.</p>
+<hr>
+<h2 id="my-first-homelab-ever">My first &ldquo;homelab&rdquo; ever</h2>
+<p><em>I&rsquo;ve got a server at home for quite a long time.</em></p>
+<p>Some time ago, I built up a computer which I&rsquo;ve been using as a Proxmox VE server since then. Specifications goes as follows:</p>
+<ul>
+<li>Intel Xeon E5-2620 v3 (6 cores, 12 threads total)</li>
+<li>8 GB DDR4 RAM with ECC</li>
+<li>AMD ATI Radeon HD R7 250E (used in a gaming Windows 10 VM with PCI-Passthrough)</li>
+<li>120 GB SATA SSD</li>
+<li>Old 40 GB HDD</li>
+</ul>
+<p>(It used to also have a 500 GB HDD but it stopped working.)</p>
+<p><em>That server alone is currently my complete homelab.</em> After building my server, I&rsquo;ve been playing around with VMs but shortly realized I made a huge mistake: I started homelabbing without an objective in mind, in other words, <em>I don&rsquo;t planned it.</em></p>
+<p>So now that I got a job (and therefore some money), I&rsquo;ll upgrade my homelab and began planning it out.</p>
+<hr>
+<p>The drawn plan:</p>
+<center><blockquote class=imgur-embed-pub lang=en data-id=a/imsFS61 data-context=false ><a href=//imgur.com/a/imsFS61></a></blockquote><script async src=//s.imgur.com/min/embed.js charset=utf-8></script></center>
+<p>Translation for Portuguese text on there:</p>
+<ul>
+<li>&ldquo;fibra ótica&rdquo; means &ldquo;optical fiber&rdquo;</li>
+<li>&ldquo;roteador&rdquo; means &ldquo;router&rdquo;</li>
+<li>&ldquo;tela&rdquo; means &ldquo;screen&rdquo;/&ldquo;display&rdquo;</li>
+</ul>
+<hr>
+<h2 id="overview">Overview</h2>
+<p>As you can see, I planned 4 servers + 1 wireless AP + 1 Network Switch + 1 Raspberry Pi. (I already have the <code>[router]</code>, its the one from my ISP.)</p>
+<p>Each server has a purpose:</p>
+<ul>
+<li><code>antenna</code> is a second router and main firewall for the homelab.</li>
+<li><code>stuff</code> is an Network-Attached-Storage (NAS) server for, well, storage purposes.</li>
+<li><code>strawberry</code> is a VM host for services that I want to expose to the public Internet.</li>
+<li><code>pink sugar</code> is also a VM host but for things that I don&rsquo;t want to expose public. It has two main VMs (<code>pink</code> and <code>sugar</code>): <code>pink</code> is a Linux environment for researching and software development, <code>sugar</code> is a macOS machine for video/audio editing/rendering and (maybe) music production.</li>
+</ul>
+<p>Internet flows in and out from the main house router to the <code>antenna</code> server, then to my network switch, then it splits and goes to a wireless AP, to the <code>stuff</code> server, to a Raspberry Pi, and to the other two servers (<code>strawberry</code> and <code>pink sugar</code>) at the same time.</p>
+<p>The Raspberry Pi will be connected to a screen as it&rsquo;s purpose is collecting and displaying data from the whole homelab.</p>
+<h2 id="hardware">Hardware</h2>
+<p>For my network switch, I bought a simple D-Link DES-1008C 8-ports switch. (Image below.)</p>
+<center><blockquote class="imgur-embed-pub" lang="en" data-id="a/yj4BYbO" data-context="false" ><a href="//imgur.com/a/yj4BYbO"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script></center>
+<p>For my <code>antenna</code> server, I chose a 1U Dell Power Edge 1950 with two Intel Xeon Dual Core 5110 with 8 GB RAM (ECC), two 300GB HDDs (but I plan removing one of those) and two gigabit ethernet ports.</p>
+<p>The wireless AP will be the Ubiquiti Networks UniFi AC Lite AP UAP-AC-LITE.</p>
+<p>I chose the Raspberry Pi 3 for data collecting and displaying.</p>
+<p><code>stuff</code> server will be a HP ProLiant DL360 G6 Server with two Intel Xeon X5570, 16 GB DDR3 RAM (ECC) and two 300 GB HDDs, but I&rsquo;ll add a SATA SSD and some more HDDs into it.</p>
+<p><code>strawberry</code> is my old server.</p>
+<p>However, the <code>pink sugar</code> server is different as I&rsquo;ll build it myself. Specifications as follows:</p>
+<ul>
+<li>Intel Xeon E5-2660 v3 (10 cores, 20 threads)</li>
+<li>32 GB DDR4 RAM (ECC)</li>
+<li>GPU NVIDIA GeForce 2080 Super</li>
+<li>500 GB NVMe SSD</li>
+</ul>
+<h2 id="it-continues">It continues&hellip;</h2>
+<p>Made this a 2-parts blog post because its 2 AM here and I want to sleep, so see you soon.</p>
+<p>Thanks for reading this post! 💜</p>
+
+    <a href="/"> >> Home</a>
+  </main>
+</div>
+    <footer>
+      
+<script>
+(function() {
+  function center_el(tagName) {
+    var tags = document.getElementsByTagName(tagName), i, tag;
+    for (i = 0; i < tags.length; i++) {
+      tag = tags[i];
+      var parent = tag.parentElement;
+      
+      if (parent.childNodes.length === 1) {
+        
+        if (parent.nodeName === 'A') {
+          parent = parent.parentElement;
+          if (parent.childNodes.length != 1) continue;
+        }
+        if (parent.nodeName === 'P') parent.style.textAlign = 'center';
+      }
+    }
+  }
+  var tagNames = ['img', 'embed', 'object'];
+  for (var i = 0; i < tagNames.length; i++) {
+    center_el(tagNames[i]);
+  }
+})();
+</script>
+
+      
+      <hr/>
+      <a href="https://github.com/binarybunnyblog">github</a> | <a href="https://twitter.com/BinaryBunnyBlog">twitter</a>
+      
+    </footer>
+  </body>
+</html>
+

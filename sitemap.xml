@@ -2,22 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://binarybunny.tk/tags/end-of-the-year/</loc>
-    <lastmod>2021-12-31T00:00:00+00:00</lastmod>
+    <loc>https://binarybunny.tk/tags/fluffy-lab/</loc>
+    <lastmod>2022-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarybunny.tk/post/2022/02/13/got-a-job-and-began-planning-out-my-homelab-logs-from-the-fluffy-lab-0x0/</loc>
+    <lastmod>2022-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarybunny.tk/tags/homelab/</loc>
+    <lastmod>2022-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarybunny.tk/tags/homelab-log/</loc>
+    <lastmod>2022-02-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://binarybunny.tk/</loc>
+    <lastmod>2022-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarybunny.tk/tags/job/</loc>
+    <lastmod>2022-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarybunny.tk/tags/planning/</loc>
+    <lastmod>2022-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarybunny.tk/post/</loc>
+    <lastmod>2022-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarybunny.tk/tags/</loc>
+    <lastmod>2022-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://binarybunny.tk/tags/end-of-the-year/</loc>
     <lastmod>2021-12-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://binarybunny.tk/tags/linux/</loc>
     <lastmod>2021-12-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://binarybunny.tk/post/</loc>
-    <lastmod>2021-12-31T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://binarybunny.tk/tags/rootkits/</loc>
-    <lastmod>2021-12-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://binarybunny.tk/tags/</loc>
     <lastmod>2021-12-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://binarybunny.tk/post/2021/12/31/the-year-is-about-to-end-i-feel-lonely-and-decided-to-write-a-bit-about-linux-rootkits/</loc>
